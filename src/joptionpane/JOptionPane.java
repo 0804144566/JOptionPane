@@ -8,6 +8,7 @@ package joptionpane;
  *
  * @author paul2
  */
+
 import javax.swing.JOptionPane;
 import java.util.Arrays;
 
@@ -25,14 +26,14 @@ public class JOptionPane {
 // creamos un ciclo for para ingresar los numeros 
         for (int i = 0; i < 5; i++) {
           //pedimos al usuario que ingrese los numeros 
-            String input = JOptionPane.showInputDialog (" Bienvenidos Ingrese el número por fabor " + (i + 1) + ":");
+            String input = JOptionPane.showInputDialog (" \nBienvenidos vamos a ordenar numeros de Menor a Mayor\n \nIngrese el número por favor " + (i + 1) + ":");
             numeros[i] = Integer.parseInt(input);
             
         }
         // ordenamos los numeros de menor a mayor
         Arrays.sort(numeros);
         // creamos un ciclo for para imprimir los numeros ordenados 
-        StringBuilder mensaje = new StringBuilder("Los números ordenados de menor a mayor son: ");
+        StringBuilder mensaje = new StringBuilder("\nAhora te mostrare los números ordenados de menor a mayor que son:\n ");
         for (int i = 0; i < numeros.length; i++) {
             mensaje.append(numeros[i]);
             if (i < numeros.length - 1) {
