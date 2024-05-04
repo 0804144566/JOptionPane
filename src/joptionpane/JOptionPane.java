@@ -25,7 +25,7 @@ public class JOptionPane {
 // creamos un ciclo for para ingresar los numeros 
         for (int i = 0; i < 5; i++) {
           //pedimos al usuario que ingrese los numeros 
-            String input = JOptionPane.showInputDialog("Ingrese el número " + (i + 1) + ":");
+            String input = JOptionPane.showInputDialog (" Bienvenidos Ingrese el número por fabor " + (i + 1) + ":");
             numeros[i] = Integer.parseInt(input);
             
         }
